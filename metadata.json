@@ -1,0 +1,9 @@
+{
+  "name": "望山云居",
+  "description": "一款为业主、租户和物业人员提供的综合社区管理应用，具有门禁控制、缴费、社交动态和报修功能。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
