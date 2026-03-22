@@ -449,7 +449,7 @@ export const Home: React.FC<HomeProps> = ({ onChangeView, messages, showGuide, o
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-1">
             <MapPin size={16} />
-            <span className="font-medium text-sm">四季花园</span>
+            <span className="font-medium text-sm">望山云居</span>
           </div>
           <button onClick={() => onChangeView(ViewState.MESSAGE_CENTER)} className="relative">
              <Bell size={20} />

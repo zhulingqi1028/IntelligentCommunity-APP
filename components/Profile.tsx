@@ -1007,7 +1007,7 @@ const MyHouseView: React.FC<{onChangeView: (v: ViewState) => void}> = ({ onChang
                     <div className="flex justify-between items-center mb-4">
                         <h3 className="font-bold text-gray-800">住户管理 ({members.length})</h3>
                         {selectedHouse.role === 'OWNER' && (
-                            <button onClick={() => setIsAddingMember(true)} className="text-brand-500 text-sm font-medium flex items-center gap-1">
+                            <button onClick={() => setIsAddingMember(true)} className="hidden text-brand-500 text-sm font-medium items-center gap-1">
                                 <Plus size={16} /> 新增成员
                             </button>
                         )}
@@ -1033,7 +1033,7 @@ const MyHouseView: React.FC<{onChangeView: (v: ViewState) => void}> = ({ onChang
                                     {selectedHouse.role === 'OWNER' && member.role !== '户主' && (
                                         <button 
                                             onClick={() => setDeletingMember(member)}
-                                            className="p-2 text-gray-400 hover:text-red-500 transition-colors"
+                                            className="hidden p-2 text-gray-400 hover:text-red-500 transition-colors"
                                         >
                                             <Trash2 size={16} />
                                         </button>
